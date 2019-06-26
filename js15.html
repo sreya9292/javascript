@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function if_statement()
+		{
+		name1=prompt("enter the name of first student");
+		maths=Number(prompt("enter mark of maths"));
+		english=Number(prompt("enter mark of english"));
+		science=Number(prompt("enter mark of science"));
+		total_mark1=maths+english+science;
+		document.write("marks for : "+name1+" is "+maths+","+english+","+science+"<br>");
+		document.write("total is :"+total_mark1+"<br>");
+		name2=prompt("enter the name of second student");
+		maths2=Number(prompt("enter mark of maths"));
+		english2=Number(prompt("enter mark of english"));
+		science2=Number(prompt("enter mark of science"));
+		total_mark2=maths2+english2+science2;
+		document.write("marks for : "+name2+" is "+maths2+","+english2+","+science2+"<br>");
+		document.write("total is :"+total_mark2);
+		total1=total_mark1-total_mark2;
+		total2=total_mark2-total_mark1;
+		if(total_mark1>total_mark2)
+		{
+			alert(name1+' has got' +total1+' mark more than '+name2);
+		}
+		else
+		{
+			alert(name2+' has got '+total2+'mark more than '+name1);
+
+		}
+		
+	}
+	if_statement();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

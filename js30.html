@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			background-color: #99ffff;
+		}
+		
+
+	</style>
+	<script type="text/javascript">
+		function check()
+		{
+			Vname=document.getElementsByClassName('inputs');
+			msg_box=document.getElementsByClassName('message');
+			len=Vname.length;
+			for(i=0;i<len;i++){
+				if(Vname[i].value==""){
+					msg_box[i].innerHTML="fill the field";
+					Vname[i].style.borderColor="red";
+				}
+				else
+				{
+					msg_box[i].innerHTML="";
+					Vname[i].style.borderColor="";
+				}
+			}
+		}
+	</script>
+</head>
+<body class="s">
+	<center><b><h2>Student Registration Form</b></h2>
+	<form>
+		<center>
+		<label>Name </label>
+		<input type="text" name="name"  class="inputs">
+		<span class="message" style="color:red"></span>
+		<br>
+		<br>
+		<label>Personal Address</label>
+		<input type="text" name="address" id="add" class="inputs">
+		<span class="message" style="color:red"></span>
+		<br>
+		<br>
+		<label>Email Id</label>
+		<input type="email" name="email" id="mail" class="inputs">
+		<span class="message" style="color:red"></span>
+		<br>
+		<br>
+		<label>MobileNo </label>
+		<input type="text" name="mobile" id="mob" class="inputs">
+		<span class="message" style="color:red"></span>
+		<br>
+		<br>
+		<label>Password </label>
+		<input type="password" name="pass" id="password" class="inputs">
+		<span class="message" style="color:red"></span>
+		<br>
+		<br>
+		<label>Confirm Password </label>
+		<input type="password" name="Confirm_pass" class="inputs">
+		<span class="message" style="color:red"></span>
+		<br>
+		<br>
+		<input type="button" name="btn" value="submit" onclick="check()">
+	</center>
+	</form>
+
+
+
+</body>
+</html>

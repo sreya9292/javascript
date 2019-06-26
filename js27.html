@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function show_data()
+		{
+			var welcome=document.getElementById('welcome').value;
+			var fnam=document.getElementById('a').value;
+			var lnam=document.getElementById('b').value;
+			var email=document.getElementById('c').value;
+			document.getElementById('welcome').innerHTML=fnam+" "+lnam+" "+email;
+		}
+
+		
+	</script>
+</head>
+<body>
+		<label>First Name:</label>
+		<input type="text" name="f_name" id="a">
+		<br>
+		<br>
+		<label>Last Name: </label>
+		<input type="text" name="l_name" id="b">
+		<br>
+		<br>
+		<label>Email Id: </label>
+		<input type="email" name="e_id" id="c">
+		<br>
+		<br>
+		<label>Password: </label>
+		<input type="password" name="pass" id="d">
+		<br>
+		<br>
+		<input type="submit" value="Sign Up" id="e" onclick="show_data()">
+<p id="welcome"></p>
+
+</body>
+</html>

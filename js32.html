@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function radioValidation(){
+			// Vname=document.getElementsByClassName('gen');
+			MALE_checked=document.getElementById('gen_male').checked;
+			FEMALE_checked=document.getElementById('gen_female').checked;
+			msg_box=document.getElementsByClassName('message');
+
+			if(MALE_checked==false&&FEMALE_checked==false){
+				msg_box[0].style.color="red";
+				msg_box[1].style.color="red";
+				return false;
+			}
+			else{
+				msg_box[0].style.color="";
+				msg_box[1].style.color="";
+				return true;
+			}
+
+		}
+	</script>
+</head>
+<body bgcolor="#9ff">
+	<form>
+		<center>
+			<h1>Radio Button Validation</h1><br><br>
+			<label>GENDER:</label>
+		<input type="radio" name="gender" value="male" id="gen_male">
+		<span class="message">MALE</span>
+		<input type="radio" name="gender" value="female" id="gen_female">
+		<span class="message">FEMALE</span>
+		<br><br>
+		<input type="button" name="btn" value="submit" onclick="radioValidation()"></center>
+	</form>
+
+</body>
+</html>
